@@ -1,13 +1,98 @@
-body{
+body {
     font-family: 'Poppins', sans-serif;
+    margin: 50px 100px 0px 100px;
 }
 
-/* Header */
+/*-------------------
+       Header
+  ------------------- */
 
-.topbar, {
+.topbar {
     display: flex;
+    justify-content: space-between;
 }
-.bar{
+
+.bar {
     display: flex;
-    text-decoration-style: none;
+    gap: 30px;
+    list-style: none;
+}
+
+/* fouse-bar */
+
+.fouse-bar {
+    display: flex;
+    margin-top: 50px;
+    gap: 100px;
+    justify-content: space-between;
+}
+
+.title {
+    font-size: 50px;
+}
+
+.fouse-bar p {
+    padding-right: 150px;
+    margin-bottom: 30px;
+}
+
+.pre-btn {
+    padding: 10px 20px;
+    color: azure;
+    background-color: rgb(211, 47, 252);
+    font-size: 18px;
+    border: 0px;
+    border-radius: 10px;
+}
+
+.main-camera {
+    background-image: url(images/Circle\ design.svg);
+}
+
+/* ------------
+       Main
+   ------------ */
+
+/* Payment */
+
+.e-payment {
+    margin-top: 100px;
+    margin-left: 75px;
+    margin-right: 75px;
+}
+
+.payment {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* product-section */
+
+.product-section {
+    margin-left: 75px;
+    margin-right: 75px;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+article {
+    padding: 10px;
+    border-radius: 5px;
+    background: #FFF;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+}
+
+.rating {
+    list-style-type: none;
+    display: flex;
+    color: orange;
+}
+.nonstar{
+    color: grey;
 }
