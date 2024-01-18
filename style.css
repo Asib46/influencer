@@ -73,12 +73,19 @@ body {
 .product-section {
     margin-left: 75px;
     margin-right: 75px;
+    margin-bottom: 100px;
 }
 
 .products {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
+}
+
+.main-title {
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 50px;
 }
 
 article {
@@ -93,6 +100,56 @@ article {
     display: flex;
     color: orange;
 }
-.nonstar{
+
+.nonstar {
     color: grey;
+}
+
+.seemore {
+    text-align: right;
+    color: rgb(253, 61, 93);
+}
+.last-main-section{
+    display: flex;
+    gap: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 50px;
+}
+
+.last-main h1{
+    font-size: 38px;
+    font-weight: 700;
+}
+.last-main p{
+    padding-right: 150px;
+}
+
+.last-btn {
+    background-color: rgb(226, 23, 148);
+    color: white;
+    padding: 15px 30px;
+    font-style: 28px;
+    font-weight: 700;
+    border-radius: 5px;
+    border: 0px;
+}
+
+/* ---------
+    Footer
+------------ */
+footer{
+    height: 170px;
+    margin-left: -100px;
+    margin-right: -100px;
+    background-color: rgb(41, 18, 94);
+    padding: 15px;
+}
+
+.discription h2, h4, .icons {
+    text-align: center;
+    color: rgb(185, 178, 178);
+}
+.discription h4{
+    font-size: 10px;
 }
