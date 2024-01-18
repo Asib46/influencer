@@ -10,7 +10,11 @@ body {
 .topbar {
     display: flex;
     justify-content: space-between;
+    padding: 0px 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
 }
+
 
 .bar {
     display: flex;
@@ -28,7 +32,7 @@ body {
 }
 
 .title {
-    font-size: 50px;
+    font-size: 4vw;
 }
 
 .fouse-bar p {
@@ -47,6 +51,9 @@ body {
 
 .main-camera {
     background-image: url(images/Circle\ design.svg);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
 }
 
 /* ------------
@@ -109,7 +116,8 @@ article {
     text-align: right;
     color: rgb(253, 61, 93);
 }
-.last-main-section{
+
+.last-main-section {
     display: flex;
     gap: 40px;
     margin-left: 40px;
@@ -117,12 +125,16 @@ article {
     margin-bottom: 50px;
 }
 
-.last-main h1{
+.last-main h1 {
     font-size: 38px;
     font-weight: 700;
 }
-.last-main p{
-    padding-right: 150px;
+.last-main-section img{
+    width: 100%;
+    height: 100%;
+}
+.last-main p {
+    padding-right: 15%;
 }
 
 .last-btn {
@@ -138,18 +150,159 @@ article {
 /* ---------
     Footer
 ------------ */
-footer{
+footer {
     height: 170px;
-    margin-left: -100px;
-    margin-right: -100px;
     background-color: rgb(41, 18, 94);
     padding: 15px;
 }
 
-.discription h2, h4, .icons {
+.discription h2,
+h4,
+.icons {
     text-align: center;
     color: rgb(185, 178, 178);
 }
-.discription h4{
+
+.discription h4 {
     font-size: 10px;
 }
+
+/*---------------------------------------
+  Mobile - iPad -Small Screen Responsive
+----------------------------------------- */
+@media screen and (max-width:576px) {
+    body {
+        margin: 0px;
+    }
+
+    .topbar {
+        flex-direction: column;
+    }
+
+    .topbar h3 {
+        text-align: center;
+        font-size: 30px;
+        margin-bottom: 0px;
+    }
+
+    .bar {
+        text-align: center;
+        display: grid;
+        gap: 10px;
+        justify-content: space-evenly;
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    .fouse-bar {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-top: 0px;
+        gap: 0px;
+    }
+
+    
+    .main-camera{
+        width: 95%;
+    }
+    .main-camera {
+        background-image: url(images/Circle\ design.svg);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+
+    .title {
+        font-size: 35px;
+        text-align: center;
+    }
+
+    .camera-section p {
+        padding-right: 0px;
+        text-align: center;
+    }
+
+    .pre-btn {
+        display: grid;
+        margin: auto;
+    }
+    .payment{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+
+    }
+    .product-section{
+
+    }
+    .products{
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+    }
+    .last-main-section{
+        flex-direction: column;
+    }
+    .last-main h1{
+        font-size: 25px;
+    }
+    .last-main p{
+        text-align: center;
+        padding-right: 0px;
+    }
+    .last-main{
+        text-align: center;
+    }
+    footer{
+        margin: auto;
+    }
+
+}
+
+/* -----------
+   ---i Pad---
+  ------------ */
+
+  @media screen and (min-width:577px) and (max-width:1000px) {
+    
+    body {
+        margin: 10px 30px 0px 30px;
+    }
+    .camera-section p{
+        padding-right: 50px;
+    }
+    .main-camera {
+        background-image: url(images/Circle\ design.svg);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+    .main-camera{
+        width: 50%;
+        height: 50%;
+    }
+    .fouse-bar {
+        gap: 0px;
+    }
+    /* e-payment */
+    .e-payment{
+        margin: 0px;
+    }
+    /* products */
+    .products{
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+    }
+    .last-main-section{
+        gap: 10px;
+        margin: 0px;
+        margin-bottom: 20px;
+    }
+    .last-main-section img{
+        width: 50%;
+        height: 50%;
+    }
+    .last-main h1{
+        font-size: 30px;
+        margin: 0px;
+    }
+    .last-main p{
+        padding-right: 0px;
+    }
+
+  }
