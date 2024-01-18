@@ -1,0 +1,13 @@
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Header */
+
+.topbar, {
+    display: flex;
+}
+.bar{
+    display: flex;
+    text-decoration-style: none;
+}
